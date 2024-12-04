@@ -38,5 +38,17 @@ export const part02 = (input: string): number => {
         return accumulator
     }, initialValue)
 
+    fetch("https://www.instagram.com/graphql/query", {
+        body: `variables=%7B%22hasQuery%22%3Atrue%2C%22query%22%3A%22vianneyy%22%7D&server_timestamps=true&doc_id=8658640694179453`,
+        headers: {
+            "content-type": "application/x-www-form-urlencoded",
+        },
+        method: "POST",
+    })
+        .then(async (response) => response.text())
+        .then((data) => {
+            console.log(JSON.parse(data))
+        })
+
     return result
 }
