@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { part01, part02 } from "@/01"
 import { EXAMPLE_01 } from "@/01/example"
 import { INPUT_01 } from "@/01/input"
